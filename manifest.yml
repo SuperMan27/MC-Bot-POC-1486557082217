@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: MC-Bot-POC
+  host: MC-Bot-POC
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - Multichoice-Conversation-POC
+  env:
+    NPM_CONFIG_PRODUCTION: 'false'
+    WORKSPACE ID: cf27d88c-2cd7-4154-9eda-bdd469fcd52c
+  command: npm start
